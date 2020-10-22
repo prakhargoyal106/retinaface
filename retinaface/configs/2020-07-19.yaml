@@ -6,10 +6,10 @@ sync_bn: True
 num_workers: 12
 experiment_name: "2020-07-19"
 
-train_image_path: /home/vladimir/workspace/data3/WiderFace/WIDER_train/images
+train_image_path: /content/drive/My Drive/widerface/train/images
 val_image_path: /home/vladimir/workspace/data3/WiderFace/WIDER_val/images
 
-train_annotation_path: /home/vladimir/workspace/data3/WiderFace/train/label.json
+train_annotation_path: /content/drive/My Drive/widerface/train/label.json
 val_annotation_path: /home/vladimir/workspace/data3/WiderFace/val/label.json
 
 num_classes: 2
