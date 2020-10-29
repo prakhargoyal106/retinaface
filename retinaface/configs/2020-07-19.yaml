@@ -32,7 +32,6 @@ optimizer:
 trainer:
   type: pytorch_lightning.Trainer
   gpus: 4
-  use_amp: True
   amp_level: O1
   max_epochs: 150
   distributed_backend: ddp
