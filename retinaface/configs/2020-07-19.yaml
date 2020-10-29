@@ -39,6 +39,7 @@ trainer:
   progress_bar_refresh_rate: 1
   benchmark: True
   precision: 16
+  show_progress_bar = True
 
 scheduler:
   type: torch.optim.lr_scheduler.CosineAnnealingWarmRestarts
