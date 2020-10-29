@@ -31,7 +31,6 @@ optimizer:
 
 trainer:
   type: pytorch_lightning.Trainer
-  early_stop_callback: False
   gpus: 4
   use_amp: True
   amp_level: O1
