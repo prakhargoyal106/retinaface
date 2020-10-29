@@ -33,13 +33,13 @@ trainer:
   type: pytorch_lightning.Trainer
   gpus: 1
   amp_level: O1
-  max_epochs: 150
+  max_epochs: 3
   distributed_backend: ddp
   num_sanity_val_steps: 1
   progress_bar_refresh_rate: 1
   benchmark: True
   precision: 16
-  callbacks: [bar]
+
 
 scheduler:
   type: torch.optim.lr_scheduler.CosineAnnealingWarmRestarts
@@ -53,7 +53,7 @@ train_parameters:
 checkpoint_callback:
   type: pytorch_lightning.callbacks.ModelCheckpoint
   filepath: "2020-07-19"
-  monitor: val_loss
+  monitor: train_loss
   verbose: True
   mode: max
   save_top_k: -1
