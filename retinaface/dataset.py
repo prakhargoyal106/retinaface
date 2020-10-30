@@ -34,7 +34,7 @@ class FaceDetectionDataset(data.Dataset):
         with open(label_path) as f:
             self.labels = json.load(f)
 
-        self.labels = [x for x in self.labels if Path(x["file_path"]).exists()]
+        #self.labels = [x for x in self.labels if Path(x["file_path"]).exists()]
 
     def __len__(self) -> int:
         return len(self.labels)
